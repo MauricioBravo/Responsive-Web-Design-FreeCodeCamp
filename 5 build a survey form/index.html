@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Hello! Lets meet us.</p>
+  </header>
+
+  <body>
+    <!-- <img src="https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png"> -->
+
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Your name:<input type="text" id="name" placeholder="Name" required/>
+    </label>
+    <label for="email" id="email-label">Your email:<input type="email" id="email" required placeholder="your@mail.com"/>
+    </label>
+    <label for="number" id="number-label">Your age:<input type="number" id="number" min="0" max="140" placeholder="18"/>
+    </label>
+
+<section name="radio-buttons">
+    <label>Tell us about your gender</label>
+      <label>
+        <input type="radio" name="gender" value="male"/>Male</label>
+      <label>
+        <input type="radio" name="gender" value="female"/>Female</label>
+      <label>
+        <input type="radio" name="gender" value="other"/>Other</label>
+    </section>
+
+    <label>What's the best pasta?
+      <select id="dropdown" name="food"/>
+        <option value="">(select one)</option>
+        <option value="lasagna">lasagna</option>
+        <option value="spaghetti">spaghetti</option>
+        <option value="ravioli">ravioli</option>
+        <option value="other">other</option>
+    </label>
+    
+    
+    What would you like to see improved? (Check all that apply)
+  <label><input type="checkbox" value="front-end"/>Front-end Projects</label>
+  <label><input type="checkbox" value="front-end"/>Back-end Projects</label>
+  <label for="data-visualization"><input type="checkbox" value="data-visualization"/>Data Visualization</label>
+  <label for="challenges"><input type="checkbox" value="front-end" value="challenges"/>Challenges</label>
+
+<label for="comments">Your additional comments <textarea id="comments" name="comments" rows="6"></textarea>
+</label>
+
+    <input type="submit" value="Submit" id="submit" />
+  </form>
+
+  </body>
