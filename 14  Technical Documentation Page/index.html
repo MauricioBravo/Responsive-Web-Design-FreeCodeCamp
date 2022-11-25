@@ -2,36 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Piano</title>
+    <title>Documentation Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main id="main-doc">     
-<div class="vl"></div>
+    
+    <main id="main-doc">
+
+      <nav id="navbar">
+        <header>Documentation Page</header>
+        <ul>
+          <li>
+            <header>JavaScript</header>
+          </li>
+          <li>
+            <header>C#</header>
+          </li>
+          <li>
+            <header>Html, CSS</header>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="vl"></div>
       <section class="main-section" id="Section_JavaScript">
-        <header id="JavaScript">Section Javascript</header>
-        <p>A high-level definition
-JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. 
-</p>
-<p>
-  It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
-</p>
-<code>
-  const para = document.querySelector('p');
+        <header id="Section_JavaScript">Section Javascript</header>
+        <p>
+          A high-level definition JavaScript is a scripting or programming
+          language that allows you to implement complex features on web pages —
+          every time a web page does more than just sit there and display static
+          information for you to look at — displaying timely content updates,
+          interactive maps, animated 2D/3D graphics, scrolling video jukeboxes,
+          etc. — you can bet that JavaScript is probably involved.
+        </p>
+        <p>
+          It is the third layer of the layer cake of standard web technologies,
+          two of which (HTML and CSS) we have covered in much more detail in
+          other parts of the Learning Area.
+        </p>
+        <code>
+          const para = document.querySelector('p');
+          para.addEventListener('click', updateName); function updateName() {
+          const name = prompt('Enter a new name'); para.textContent = `Player 1:
+          ${name}`; }
+        </code>
+        <ul>
+          <li>
+              <p>Algo en lista ordenada</p>
+          </li>
+        </ul>
 
-para.addEventListener('click', updateName);
-
-function updateName() {
-  const name = prompt('Enter a new name');
-  para.textContent = `Player 1: ${name}`;
-}
-</code>
-  <ul>
-    <li>
-
-    </li>
-  </ul>
       </section>
       <section class="main-section">
         <header id="topic-2">Topic of section 2</header>
@@ -46,29 +67,7 @@ function updateName() {
         <header id="topic-5">Topic of section 5</header>
       </section>
 
-      <nav id="navbar">
-        <header>Documentation Page</header>
-        <ul>
-          <li>
-            <header>
-             JavaScript
-           </header>
-          </li>
-          <li>
-            <header>
-            C#
-            </header>
-          </li>
-          <li>
-            <header>
-            Html, CSS
-            </header>
-          </li>
-        </ul>  
-      </nav>
-
-
+      
     </main>
   </body>
-
 </html>
