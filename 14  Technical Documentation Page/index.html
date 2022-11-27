@@ -7,25 +7,64 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+
     <div class="vl"></div>
     
     <nav id="navbar">
       <header>Documentation Page</header>
       <ul>
         <li>
-          <header>JavaScript</header>
+          <a class="nav-link" href="#Section-JavaScript">HTML</a>
         </li>
         <li>
-          <header>C#</header>
+          <a class="nav-link" href="#Section-CSS">CSS</a>
         </li>
         <li>
-          <header>Html, CSS</header>
+         <a class="nav-link" href="#Section-JavaScript">JavaScript</a>
         </li>
       </ul>
     </nav>
 
     <main id="main-doc">
-   
+   <section class="main-section" id="Section_HTML">
+        <header id="Section_HTML">Section HTML</header>
+        <p>
+HTML, acronym for HyperText Markup Language, refers to the markup language for 
+the elaboration of web pages. It is a standard that serves as a reference for 
+software that connects with the elaboration of web pages in their different 
+versions, defines a basic structure and a code (called HTML code) for the 
+definition of the content of a web page, such as text, images, videos, games, 
+among others. It is a standard by the World Wide Web Consortium (W3C) or WWW
+ Consortium, an organization dedicated to the standardization of almost all 
+ technologies linked to the web, especially with regard to their writing and
+  interpretation. HTML is considered the most important web language, being 
+  its crucial invention in the emergence, development and expansion of the World
+   Wide Web (WWW). It is the standard that has been imposed in the visualization 
+   of web pages and is the one that all current browsers have adopted.1
+         </p>
+      <pre>
+        <code> 
+          &lt;body>
+          &lt;div class="vl"></div> 
+            &lt;nav id="navbar">
+                &lt;header>Documentation Page</header>
+                &lt;ul>
+                  &lt;li>
+                    &lt;a class="nav-link" href="#Section-JavaScript">HTML</a>
+                    &lt;/li>
+                  &lt;/ul>
+                &lt;/nav>
+              &lt;/body>
+        </code> 
+      </pre>
+
+
+
+
+
+
+
+
       <section class="main-section" id="Section_JavaScript">
         <header id="Section_JavaScript">Section Javascript</header>
         <p>
@@ -41,14 +80,15 @@
           two of which (HTML and CSS) we have covered in much more detail in
           other parts of the Learning Area.
         </p>
-        <code>
-        <pre>
+       <pre> <code>
+        
           const para = document.querySelector('p');
           para.addEventListener('click', updateName); function updateName() {
           const name = prompt('Enter a new name'); para.textContent = `Player 1:
           ${name}`; }
+       
+        </code> 
         </pre>
-        </code>
         <ul>
           <li>
             <p>Algo en lista ordenada</p>
