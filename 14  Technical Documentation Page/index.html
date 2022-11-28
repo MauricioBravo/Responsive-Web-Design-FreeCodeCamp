@@ -14,14 +14,26 @@
       <header>Documentation Page</header>
       <ul>
         <li>
-          <a class="nav-link" href="#Section-JavaScript">HTML</a>
+          <a class="nav-link" href="#Section_HTML">Section HTML</a>
         </li>
         <li>
-          <a class="nav-link" href="#Section-CSS">CSS</a>
+          <a class="nav-link" href="#Section_CSS">Section CSS</a>
         </li>
         <li>
-         <a class="nav-link" href="#Section-JavaScript">JavaScript</a>
+         <a class="nav-link" href="#Section_JavaScript">Section JavaScript</a>
         </li>
+        <li>
+          <a class="nav-link" href="#Section_ReactJS">Section ReactJS</a>
+         </li>
+         <li>
+          <a class="nav-link" href="#Section_JSX">Section JSX</a>
+         </li>
+         <li>
+          <a class="nav-link" href="#Section_Angular">Section Angular</a>
+         </li>
+         <li>
+          <a class="nav-link" href="#Section_TypeScript">Section TypeScript</a>
+         </li>
       </ul>
     </nav>
 
@@ -55,8 +67,40 @@ among others. It is a standard by the World Wide Web Consortium (W3C) or WWW
   &lt;/body></code></pre>
     </section>
 
+
+    <section class="main-section" id="Section_CSS">
+      <header id="Section_CSS">Section CSS</header>
+    <p>
+      In the HTML Section, we covered what HTML is and how it is used to mark up documents. 
+      These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs 
+      break onto a new line and have space between them. Links are colored and underlined to distinguish them from
+       the rest of the text. What you are seeing are the browser's default styles — very basic styles — that the 
+       browser applies to HTML to make sure that the page will be basically readable even if no explicit styling 
+       is specified by the author of the page.
+    </p>
+    <p>
+      However, the web would be a boring place if all websites looked like that. Using CSS, you can control
+       exactly how HTML elements look in the browser, presenting your markup using whatever design you like.
+       Example of some CSS lines:
+    </p>
+<pre><code>
+html{
+font-size:20px;
+}
+body{
+background-color:hsl(206, 26%, 28%,0.6);
+height: 100vw;
+}
+main{
+position: absolute;
+}
+.main-section>header{
+font-size: 1.2rem;
+}
+</code></pre>
+
     <section class="main-section" id="Section_JavaScript">
-      <header id="Section_JavaScript">Section Javascript</header>
+      <header id="Section_JavaScript">Section JavaScript</header>
       <p>A high-level definition JavaScript is a scripting or programming
         language that allows you to implement complex features on web pages —
         every time a web page does more than just sit there and display static
@@ -73,7 +117,123 @@ ${name}`; }
 </code></pre>
   </section>
 
+  <section class="main-section" id="Section_ReactJS">
+    <header id="Section_ReactJS">Section ReactJS</header>
+<p>
+  React (also called React.js or ReactJS) is an open source Javascript library designed 
+  to create user interfaces with the aim of facilitating the development of applications 
+  on a single page. It is maintained by Facebook and the free software community. 
+  There are more than a thousand free developers in the project.
+</p>
+  
+<p>
+  React tries to help developers build applications that use data that changes all the time.
+  Its goal is to be simple, declarative and easy to combine. React only handles the use
+  r interface in an application; React is the View in a context in which the MVC 
+  (Model-View-Controller) or MVVM (Model-View-Model) is used. It can also be used with 
+  React-based extensions that take care of non-UI parts (which are not part of the user 
+  interface) of a web application.
+ 
+</p>
+<p>
+  According to the JavaScript analytics service, Libscore, React is currently being used 
+  on the main pages of Imgur, Bleacher Informe, Feedly, Airbnb, SeatGeek, HelloSign,
+   among others.
+</p>
+</section>
 
+<section class="main-section" id="Section_JSX">
+  <header id="Section_JSX">Section JSX</header>
+<p>
+  What is JSX?
+  JSX is a JavaScript Extension Syntax used in React to easily write HTML and JavaScript together.
+  Take a look at the below code:
+</p>
+
+<pre><code>const jsx =  &lt;h1>This is JSX &lt;/h1>
+</code></pre>
+<p>
+This is simple JSX code in React. But the browser does not understand this JSX
+   because it's not valid JavaScript code. This is because we're assigning an HTML 
+   tag to a variable that is not a string but just HTML code.
+</p>
+</section>
+
+
+
+
+<section class="main-section" id="Section_Angular">
+  <header id="Section_Angular">Section Angular</header>
+  <p>
+  <h3>
+    What is Angular?
+  </h3>
+ 
+This topic can help you understand Angular: what Angular is, what advantages it provides,
+ and what you might expect as you start to build your applications.
+
+Angular is a development platform, built on TypeScript. As a platform, Angular includes:
+</p>
+<ul>
+  <li>
+    A component-based framework for building scalable web applications
+  </li>
+  <li>
+    A collection of well-integrated libraries that cover a wide variety of features, 
+    including routing, forms management, client-server communication, and more
+  </li>
+  <li>
+    A suite of developer tools to help you develop, build, test, and update your code
+  </li>
+</ul>
+<p>
+  With Angular, you're taking advantage of a platform that can scale from single-developer
+   projects to enterprise-level applications. Angular is designed to make updating as
+    straightforward as possible, so take advantage of the latest developments with minimal
+     effort. Best of all, the Angular ecosystem consists of a diverse group of over 1.7 
+     million developers, library authors, and content creators.
+</p>
+<section class="main-section" id="Section_TypeScript">
+  <header id="Section_TypeScript">Section TypeScript</header>
+<p>
+  TypeScript is a primary language for Angular application development. 
+  It is a superset of JavaScript with design-time support for type safety and tooling.
+</p>
+<p>
+Browsers can't execute TypeScript directly. Typescript must be "transpiled" into 
+JavaScript using the tsc compiler, which requires some configuration.
+Example of TypeScript:
+</p>
+
+
+<pre><code>
+  const user: User = {
+    name: "Hayes",
+    id: 0,
+  };
+  </code></pre>
+<p>
+  
+  Benefits of TypeScript: Why should you use it?
+</p>
+<ul>
+  <li>
+
+    Precise defining through typing. ...
+  </li>
+  <li>
+    Types make code management easier. ...
+
+  </li>
+  <li>
+
+    Increased team performance. ...
+  </li>
+  <li>
+
+    TypeScript is popular and trusted by the biggest players in the industry.
+  </li>
+</ul>
       
     </main>
   </body>
